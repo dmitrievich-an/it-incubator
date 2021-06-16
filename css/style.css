@@ -1,0 +1,33 @@
+body {
+  margin: 0 auto;
+}
+form {
+  position: relative;
+  width: 40%;
+  margin: 20% auto;
+}
+/* .d1 {
+  margin-top: 20%;
+} */
+.d1 input {
+  width: 100%;
+  height: 55px;
+  padding: 10px;
+  border: 2px solid #e62424;
+  outline: none;
+  color: #000000;
+}
+.d1 button {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 20%;
+  height: 55px;
+  border: none;
+  background-color: rgb(20, 189, 29);
+  color: #fff;
+  cursor: pointer;
+}
+.d1 button:before {
+  content: "Найти";
+}
