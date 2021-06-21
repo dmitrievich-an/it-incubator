@@ -36,26 +36,40 @@ function superSum(num1, num2) {
 }
 console.log("");
 
-// Выполнение задания №7
+// Выполнение задания №7 (исправленное)
 console.log("Задание 7:");
-var arrayOfNumbers = [-7, -124, 40, 489, 19, 0];
+var numbersArray = [61, 33, -95, 323, 9, -17]
+var numbersArrayMin = numbersArray[0]
+var numbersArrayMax = numbersArray[0]
 
-//    Поиск максимального числа
-for (var i = 0; i < arrayOfNumbers.length; i++) {
-  if (arrayOfNumbers[i] > arrayOfNumbers[0]) {
-    arrayOfNumbers[0] = arrayOfNumbers[i];
-  }
+for (var i = 0; i < numbersArray.length; i++) {
+  numbersArrayMin = (numbersArray[i] < numbersArrayMin) ? numbersArray[i] : numbersArrayMin
+  numbersArrayMax = (numbersArray[i] > numbersArrayMax) ? numbersArray[i] : numbersArrayMax
 }
-console.log("Максимальное число = " + arrayOfNumbers[0]);
 
-//    Поиск минимального числа
-for (var i = 0; i < arrayOfNumbers.length; i++) {
-  if (arrayOfNumbers[i] < arrayOfNumbers[0]) {
-    arrayOfNumbers[0] = arrayOfNumbers[i];
-  }
-}
-console.log("Минимальное число = " + arrayOfNumbers[0]);
+console.log("Максимальное число = " + numbersArrayMax)
+console.log("Минимальное число = " + numbersArrayMin);
 console.log("");
+
+// console.log("Задание 7:");
+// var arrayOfNumbers = [-7, -124, 40, 489, 19, 0];
+
+// //    Поиск максимального числа
+// for (var i = 0; i < arrayOfNumbers.length; i++) {
+//   if (arrayOfNumbers[i] > arrayOfNumbers[0]) {
+//     arrayOfNumbers[0] = arrayOfNumbers[i];
+//   }
+// }
+// console.log("Максимальное число = " + arrayOfNumbers[0]);
+
+// //    Поиск минимального числа
+// for (var i = 0; i < arrayOfNumbers.length; i++) {
+//   if (arrayOfNumbers[i] < arrayOfNumbers[0]) {
+//     arrayOfNumbers[0] = arrayOfNumbers[i];
+//   }
+// }
+// console.log("Минимальное число = " + arrayOfNumbers[0]);
+// console.log("");
 
 
 // Выполнение задания №8
